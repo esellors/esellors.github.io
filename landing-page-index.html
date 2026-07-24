@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>My Apps</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(160deg, #1a1230, #0d0818);
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    color: #fff;
+    padding: calc(env(safe-area-inset-top) + 40px) 20px env(safe-area-inset-bottom);
+    display: flex;
+    justify-content: center;
+  }
+  .wrap {
+    width: 100%;
+    max-width: 420px;
+  }
+  h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 0 4px;
+    letter-spacing: -0.4px;
+  }
+  p.sub {
+    color: rgba(255,255,255,0.5);
+    font-size: 14px;
+    margin: 0 0 28px;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li + li { margin-top: 12px; }
+  a.app-link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 18px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 16px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.15s ease;
+  }
+  a.app-link:active { background: rgba(255,255,255,0.12); }
+  .emoji {
+    font-size: 26px;
+    line-height: 1;
+  }
+  .meta { flex: 1; }
+  .app-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .app-desc {
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+  }
+  .chevron {
+    color: rgba(255,255,255,0.3);
+    font-size: 18px;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>My Apps</h1>
+    <p class="sub">A directory of things I've built</p>
+    <ul>
+      <li>
+        <a class="app-link" href="/cat-app/">
+          <span class="emoji">🐱</span>
+          <span class="meta">
+            <div class="app-name">Random Cat</div>
+            <div class="app-desc">Fetches a new cat pic on demand</div>
+          </span>
+          <span class="chevron">›</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
